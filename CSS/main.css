@@ -1,0 +1,448 @@
+/*************************************** | Color Scheme | ****************************************/
+
+:root 
+{
+    /* Background Colors */
+
+    --ColorBackgroundDarkPrimary: #121212;
+    --ColorBackgroundDarkSecondary: #1B1B1B;
+    --ColorBackgroundLightPrimary: #fafafa;
+    --ColorBackgroundLightSecondary: #c5c5c5;
+    --ColorBackgroundGradientPrimary: linear-gradient(to bottom right, rgb(209, 95, 253), rgb(61, 123, 255));
+    --ColorBackgroundGradientSecondary: linear-gradient(to bottom right, rgb(220, 132, 255), rgb(87, 140, 255));
+    --ColorBackgroundTransparentPrimary: 30%;
+    --ColorBackgroundTransparentSecondary: 0%;
+
+    /* Text Colors */
+
+    --ColorTextDarkPrimary: rgba(255, 255, 255, 0.85);
+    --ColorTextDarkSecondary: rgba(255, 255, 255, 0.62);
+    --ColorTextDarkDisabled: rgba(255, 255, 255, 0.38);
+    --ColorTextDarkAccent: #b266fd;
+    --ColorTextDarkSuccess: #79ffb5;
+    --ColorTextDarkWarning: #f7fa56;
+    --ColorTextDarkError: #fb7575;
+
+    --ColorTextLightPrimary: #000000;
+    --ColorTextLightSecondary: #272727;
+    --ColorTextLightDisabled: #808080;
+    --ColorTextLightAccent: #0077ff;
+    --ColorTextLightSuccess: #03bd56;
+    --ColorTextLightWarning: #ffda33;
+    --ColorTextLightError: #ff0000;
+
+    --ColorTextGradientPrimary: linear-gradient(to bottom right, rgb(216, 118, 255),rgb(61, 161, 255));
+    --ColorTextGradientSecondary: linear-gradient(to bottom right, rgb(220, 132, 255), rgb(87, 140, 255));
+
+    /* Button Colors */
+
+    --ColorButtonDarkPrimary: #3b3b3b;
+    --ColorButtonDarkSecondary: rgba(255, 255, 255, 0.85);
+    --ColorButtonDarkAccent: #b871ff;
+    --ColorButtonDarkSuccess: #79ffb5;
+    --ColorButtonDarkWarning: #f7fa56;
+    --ColorButtonDarkError: #fb7575;
+    --ColorButtonDarkDisabled: 38%;
+    
+    --ColorButtonLightPrimary: #0077ff;
+    --ColorButtonLightSecondary: #000000;
+    --ColorButtonLightAccent: #b871ff;
+    --ColorButtonLightSuccess: #03bd56;
+    --ColorButtonLightWarning: #ffda33;
+    --ColorButtonLightError: #ff0000;
+    --ColorButtonLightDisabled: 65%;
+
+    --ColorButtonGradient: linear-gradient(to bottom right, rgb(209, 95, 253), rgb(61, 123, 255));
+    --ColorButtonGradientHover: linear-gradient(to bottom left, rgb(209, 95, 253), rgb(61, 123, 255));
+
+    /* Icon Colors */
+
+    --ColorIconDarkPrimary: rgba(255, 255, 255, 0.85);
+    --ColorIconDarkSecondary: #c5c5c5;
+    --ColorIconDarkAccent: #b871ff;
+    --ColorIconDarkDisabled: 38%;
+
+    --ColorIconLightPrimary: #000000;
+    --ColorIconLightSecondary: #272727;
+    --ColorIconLightAccent: #0077ff;
+    --ColorIconLightDisabled: 65%;
+
+    --ColorIconGradient: linear-gradient(to bottom right, rgb(209, 95, 253), rgb(61, 123, 255));
+    --ColorIconGradientHover: linear-gradient(to bottom left, rgb(209, 95, 253), rgb(61, 123, 255));
+}
+
+/* Background Colors */
+
+.Color_Background_DarkPrimary
+{
+    background-color: var(--ColorBackgroundDarkPrimary);
+}
+
+.Color_Background_DarkSecondary
+{
+    background-color: var(--ColorBackgroundDarkSecondary);
+}
+
+.Color_Background_LightPrimary
+{
+    background-color: var(--ColorBackgroundLightPrimary);
+}
+
+.Color_Background_LightSecondary
+{
+    background-color: var(--ColorBackgroundLightSecondary);
+}
+
+.Color_Background_GradientPrimary
+{
+    background: var(--ColorBackgroundGradientPrimary);
+}
+
+.Color_Background_GradientSecondary
+{
+    background: var(--ColorBackgroundGradientSecondary);
+}
+
+.Color_Background_TransparentPrimary
+{
+    background: var(--ColorBackgroundTransparentPrimary);
+}
+
+.Color_Background_TransparentSecondary
+{
+    background: var(--ColorBackgroundTransparentSecondary);
+}
+
+/* Text Colors */
+
+.Color_Text_DarkPrimary
+{
+    color: var(--ColorTextDarkPrimary);
+}
+
+.Color_Text_DarkSecondary
+{
+    color: var(--ColorTextDarkSecondary);
+}
+
+.Color_Text_DarkDisabled
+{
+    color: var(--ColorTextDarkDisabled);
+}
+
+.Color_Text_DarkAccent
+{
+    color: var(--ColorTextDarkAccent);
+}
+
+.Color_Text_DarkSuccess
+{
+    color: var(--ColorTextDarkSuccess);
+}
+
+.Color_Text_DarkWarning
+{
+    color: var(--ColorTextDarkWarning);
+}
+
+.Color_Text_DarkError
+{
+    color: var(--ColorTextDarkError);
+}
+
+.Color_Text_LightPrimary
+{
+    color: var(--ColorTextLightPrimary);
+}
+
+.Color_Text_LightSecondary
+{
+    color: var(--ColorTextLightSecondary);
+}
+
+.Color_Text_LightDisabled
+{
+    color: var(--ColorTextLightDisabled);
+}
+
+.Color_Text_LightAccent
+{
+    color: var(--ColorTextLightAccent);
+}
+
+.Color_Text_LightSuccess
+{
+    color: var(--ColorTextLightSuccess);
+}
+
+.Color_Text_LightWarning
+{
+    color: var(--ColorTextLightWarning);
+}
+
+.Color_Text_LightError
+{
+    color: var(--ColorTextLightError);
+}
+
+.Color_Text_GradientPrimary
+{
+    background: var(--ColorTextGradientPrimary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Color_Text_GradientSecondary
+{
+    background: var(--ColorTextGradientSecondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Button Colors */
+
+.Color_Button_DarkPrimary
+{
+    background-color: var(--ColorButtonDarkPrimary);
+}
+
+.Color_Button_DarkSecondary
+{
+    background-color: var(--ColorButtonDarkSecondary);
+}
+
+.Color_Button_DarkAccent
+{
+    background-color: var(--ColorButtonDarkAccent);
+}
+
+.Color_Button_DarkSuccess
+{
+    background-color: var(--ColorButtonDarkSuccess);
+}
+
+.Color_Button_DarkWarning
+{
+    background-color: var(--ColorButtonDarkWarning);
+}
+
+.Color_Button_DarkError
+{
+    background-color: var(--ColorButtonDarkError);
+}
+
+.Color_Button_DarkDisabled
+{
+    background-color: var(--ColorButtonDarkDisabled);
+}
+
+.Color_Button_LightPrimary
+{
+    background-color: var(--ColorButtonLightPrimary);
+}
+
+.Color_Button_LightSecondary
+{
+    background-color: var(--ColorButtonLightSecondary);
+}
+
+.Color_Button_LightAccent
+{
+    background-color: var(--ColorButtonLightAccent);
+}
+
+.Color_Button_LightSuccess
+{
+    background-color: var(--ColorButtonLightSuccess);
+}
+
+.Color_Button_LightWarning
+{
+    background-color: var(--ColorButtonLightWarning);
+}
+
+.Color_Button_LightError
+{
+    background-color: var(--ColorButtonLightError);
+}
+
+.Color_Button_LightDisabled
+{
+    background-color: var(--ColorButtonLightDisabled);
+}
+
+.Color_Button_Gradient
+{
+    background-color: var(--ColorButtonGradient);
+}
+
+.Color_Button_Gradient:hover
+{
+    background-color: var(--ColorButtonGradientHover);
+}
+
+/* Icon Colors */
+
+.Color_Icon_DarkPrimary
+{
+    color: var(--ColorIconDarkPrimary);
+}
+
+.Color_Icon_DarkSecondary
+{
+    color: var(--ColorIconDarkSecondary);
+}
+
+.Color_Icon_DarkAccent
+{
+    color: var(--ColorIconDarkAccent);
+}
+
+.Color_Icon_DarkDisabled
+{
+    color: var(--ColorIconDarkDisabled);
+}
+
+.Color_Icon_LightPrimary
+{
+    color: var(--ColorIconLightPrimary);
+}
+
+.Color_Icon_LightSecondary
+{
+    color: var(--ColorIconLightSecondary);
+}
+
+.Color_Icon_LightAccent
+{
+    color: var(--ColorIconLightAccent);
+}
+
+.Color_Icon_LightDisabled
+{
+    color: var(--ColorIconLightDisabled);
+}
+
+.Color_Icon_GradientPrimary
+{
+    background: var(--ColorIconGradientPrimary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Color_Icon_GradientSecondary
+{
+    background: var(--ColorIconGradientSecondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*************************************** | Fonts | ****************************************/
+
+:root 
+{
+    --FontSizeTitleHuge: 50px;
+    --FontWeightTitleHuge: 650;
+    --FontSizeTitleBig: 36px;
+    --FontWeightTitleBig: 600;
+    --FontSizeTitleMedium: 28px;
+    --FontWeightTitleMedium: 600;
+    --FontSizeTitleSmall: 20px;
+    --FontWeightTitleSmall: 550;
+    --FontSizeTitleMiniscule: 15px;
+    --FontWeightTitleMiniscule: 500;
+
+    --FontSizeTextHuge: 27px;
+    --FontWeightTextHuge: 550;
+    --FontSizeTextBig: 22px;
+    --FontWeightTextBig: 500;
+    --FontSizeTextMedium: 17px;
+    --FontWeightTextMedium: 500;
+    --FontSizeTextSmall: 13px;
+    --FontWeightTextSmall: 450;
+    --FontSizeTextMiniscule: 11px;
+    --FontWeightTextMiniscule: 400;
+
+    --FontSizeIconBig: 75px;
+    --FontWeightIconBig: 600;
+    --FontSizeIconMedium: 50px;
+    --FontWeightIconMedium: 550;
+    --FontSizeIconSmall: 25px;
+    --FontWeightIconSmall: 500;
+}
+
+.Text_Title_Huge
+{
+    font-size: var(--FontSizeTitleHuge);
+    font-weight: var(--FontWeightTitleHuge);
+}
+
+.Text_TitleBig
+{
+    font-size: var(--FontSizeTitleBig);
+    font-weight: var(--FontWeightTitleBig);
+}
+
+
+
+/*************************************** | Borders | ****************************************/
+
+:root 
+{
+    --BorderRadiusRound: 50%;
+    --BorderRadiusRounded: 15px;
+    --BorderRadiusPolished: 8px;
+    --BorderRadiusNone: 0px;
+    
+    --BorderSizeThick: 5px;
+    --BorderSizeMedium: 2px;
+    --BorderSizeThin: 1px;
+    --BorderSizeNone: 0px;
+}
+
+.BorderRadius_Round
+{
+    border-radius: var(--BorderRadiusRound);
+}
+
+.BorderRadius_Rounded
+{
+    border-radius: var(--BorderRadiusRounded);
+}
+
+.BorderRadius_Polished
+{
+    border-radius: var(--BorderRadiusPolished);
+}
+
+.BorderRadius_None
+{
+    border-radius: var(--BorderRadiusNone);
+}
+
+.BorderSize_Thick
+{
+    border-width: var(--BorderSizeThick);
+}
+
+.BorderSize_Medium
+{
+    border-width: var(--BorderSizeMedium);
+}
+
+.BorderSize_Thin
+{
+    border-width: var(--BorderSizeThin);
+}
+
+.BorderSize_None
+{
+    border-width: var(--BorderSizeNone);
+}
+
+/*************************************** |  | ****************************************/
+
