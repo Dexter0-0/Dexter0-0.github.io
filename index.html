@@ -29,22 +29,79 @@
     <link href = "External/Bootstrap/css/bootstrap.min.css" rel = "stylesheet" type = "text/css">
     <script src = "External/Bootstrap/js/bootstrapmin.js"></script>
 
+    <!-- Swiper -->
+    <link href = "External/Swiper/Swiper.css" rel = "stylesheet" type = "text/css">
+    <script src = "External/Swiper/Swiper.js"></script>
+
     <!-- Custom Fonts and icons -->
     <link href = "https://fonts.googleapis.com/css?family=Montserrat:400,700" rel = "stylesheet" type = "text/css" crossorigin>
     <link href = "External/FontAwesome/css/all.min.css" rel = "stylesheet" type = "text/css">
 
     <!-- CSS -->
     <link href = "CSS/main.css" rel = "stylesheet">
-    <link href = "CSS/index.css" rel = "stylesheet">
+    <link href = "CSS/HomePage.css" rel = "stylesheet">
 
     <!-- Javascript -->
-    <script src = "Javascript/main.js"></script>
-    <script src = "Javascript/index.js"></script>
+    <script src = "Javascript/main.js" defer></script>
+    <script src = "Javascript/HomePage.js" defer></script>
 </head>
 
-<body style = "width: 100vw; height: 100vh;" class = "Color_Background_DarkPrimary">
+<body>
+	<!-- Navigation bar -->
+	<navbar>
+		<div class = "container" id = "NavbarContainer">
+			<div class = "row" id = "NavbarIconRow">
+				<div class = "col-3 text-center NavbarIconCol" onclick = "SlideToPage(0)">
+					<i class = "fas fa-home NavbarIcon"></i>
+				</div>
 
+				<div class = "col-3 text-center NavbarIconCol" onclick = "SlideToPage(1)">
+					<i class = "fas fa-laptop-code NavbarIcon"></i>
+				</div>
 
+				<div class = "col-3 text-center NavbarIconCol" onclick = "SlideToPage(2)">
+					<i class = "fas fa-info NavbarIcon"></i>
+				</div>
 
+				<div class = "col-3 text-center NavbarIconCol" onclick = "SlideToPage(3)">
+					<i class = "fas fa-user NavbarIcon"></i>
+				</div>
+			</div>
+
+			<div class = "row" id = "NavbarActiveRow">
+				<div id = "ActiveMenu"></div>
+			</div>
+		</div>
+	</navbar>
+
+    <!-- Site Pages -->
+	<div class = "container-fluid swiper-container" id = "PagesContainer">
+		<div class = "swiper-wrapper">
+			<!-- Home Page -->
+			<section class = "PageContainer swiper-slide" id = "HomePage">
+				<div class = "text-center" style = "width: 100%; height: 100%; padding-top: 42.5vh;">
+					<h1>Page 1</h1>
+				</div>
+			</section>
+
+			<section class = "PageContainer swiper-slide" id = "HomePage">
+				<div class = "text-center" style = "width: 100%; height: 100%; padding-top: 42.5vh;">
+					<h1>Page 2</h1>
+				</div>
+			</section>
+
+			<section class = "PageContainer swiper-slide" id = "HomePage">
+				<div class = "text-center" style = "width: 100%; height: 100%; padding-top: 42.5vh;">
+					<h1>Page 3</h1>
+				</div>
+			</section>
+
+			<section class = "PageContainer swiper-slide" id = "HomePage">
+				<div class = "text-center" style = "width: 100%; height: 100%; padding-top: 42.5vh;">
+					<h1>Page 4</h1>
+				</div>
+			</section>
+		</div>
+	</div>
 
 </body>

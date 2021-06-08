@@ -10,6 +10,8 @@
     --ColorBackgroundLightSecondary: #c5c5c5;
     --ColorBackgroundGradientPrimary: linear-gradient(to bottom right, rgb(209, 95, 253), rgb(61, 123, 255));
     --ColorBackgroundGradientSecondary: linear-gradient(to bottom right, rgb(220, 132, 255), rgb(87, 140, 255));
+	--ColorBackgroundGlassPrimary: rgba(255, 255, 255, 0.25);
+	--ColorBackgroundGlassSecondary: rgba(255, 255, 255, 0.40);
     --ColorBackgroundTransparentPrimary: 30%;
     --ColorBackgroundTransparentSecondary: 0%;
 
@@ -23,8 +25,8 @@
     --ColorTextDarkWarning: #f7fa56;
     --ColorTextDarkError: #fb7575;
 
-    --ColorTextLightPrimary: #000000;
-    --ColorTextLightSecondary: #272727;
+    --ColorTextLightPrimary: #121212;
+    --ColorTextLightSecondary: #202020;
     --ColorTextLightDisabled: #808080;
     --ColorTextLightAccent: #0077ff;
     --ColorTextLightSuccess: #03bd56;
@@ -71,276 +73,6 @@
     --ColorIconGradientHover: linear-gradient(to bottom left, rgb(209, 95, 253), rgb(61, 123, 255));
 }
 
-/* Background Colors */
-
-.Color_Background_DarkPrimary
-{
-    background-color: var(--ColorBackgroundDarkPrimary);
-}
-
-.Color_Background_DarkSecondary
-{
-    background-color: var(--ColorBackgroundDarkSecondary);
-}
-
-.Color_Background_LightPrimary
-{
-    background-color: var(--ColorBackgroundLightPrimary);
-}
-
-.Color_Background_LightSecondary
-{
-    background-color: var(--ColorBackgroundLightSecondary);
-}
-
-.Color_Background_GradientPrimary
-{
-    background: var(--ColorBackgroundGradientPrimary);
-}
-
-.Color_Background_GradientSecondary
-{
-    background: var(--ColorBackgroundGradientSecondary);
-}
-
-.Color_Background_TransparentPrimary
-{
-    background: var(--ColorBackgroundTransparentPrimary);
-}
-
-.Color_Background_TransparentSecondary
-{
-    background: var(--ColorBackgroundTransparentSecondary);
-}
-
-/* Text Colors */
-
-.Color_Text_DarkPrimary
-{
-    color: var(--ColorTextDarkPrimary);
-}
-
-.Color_Text_DarkSecondary
-{
-    color: var(--ColorTextDarkSecondary);
-}
-
-.Color_Text_DarkDisabled
-{
-    color: var(--ColorTextDarkDisabled);
-}
-
-.Color_Text_DarkAccent
-{
-    color: var(--ColorTextDarkAccent);
-}
-
-.Color_Text_DarkSuccess
-{
-    color: var(--ColorTextDarkSuccess);
-}
-
-.Color_Text_DarkWarning
-{
-    color: var(--ColorTextDarkWarning);
-}
-
-.Color_Text_DarkError
-{
-    color: var(--ColorTextDarkError);
-}
-
-.Color_Text_LightPrimary
-{
-    color: var(--ColorTextLightPrimary);
-}
-
-.Color_Text_LightSecondary
-{
-    color: var(--ColorTextLightSecondary);
-}
-
-.Color_Text_LightDisabled
-{
-    color: var(--ColorTextLightDisabled);
-}
-
-.Color_Text_LightAccent
-{
-    color: var(--ColorTextLightAccent);
-}
-
-.Color_Text_LightSuccess
-{
-    color: var(--ColorTextLightSuccess);
-}
-
-.Color_Text_LightWarning
-{
-    color: var(--ColorTextLightWarning);
-}
-
-.Color_Text_LightError
-{
-    color: var(--ColorTextLightError);
-}
-
-.Color_Text_GradientPrimary
-{
-    background: var(--ColorTextGradientPrimary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.Color_Text_GradientSecondary
-{
-    background: var(--ColorTextGradientSecondary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* Button Colors */
-
-.Color_Button_DarkPrimary
-{
-    background-color: var(--ColorButtonDarkPrimary);
-}
-
-.Color_Button_DarkSecondary
-{
-    background-color: var(--ColorButtonDarkSecondary);
-}
-
-.Color_Button_DarkAccent
-{
-    background-color: var(--ColorButtonDarkAccent);
-}
-
-.Color_Button_DarkSuccess
-{
-    background-color: var(--ColorButtonDarkSuccess);
-}
-
-.Color_Button_DarkWarning
-{
-    background-color: var(--ColorButtonDarkWarning);
-}
-
-.Color_Button_DarkError
-{
-    background-color: var(--ColorButtonDarkError);
-}
-
-.Color_Button_DarkDisabled
-{
-    background-color: var(--ColorButtonDarkDisabled);
-}
-
-.Color_Button_LightPrimary
-{
-    background-color: var(--ColorButtonLightPrimary);
-}
-
-.Color_Button_LightSecondary
-{
-    background-color: var(--ColorButtonLightSecondary);
-}
-
-.Color_Button_LightAccent
-{
-    background-color: var(--ColorButtonLightAccent);
-}
-
-.Color_Button_LightSuccess
-{
-    background-color: var(--ColorButtonLightSuccess);
-}
-
-.Color_Button_LightWarning
-{
-    background-color: var(--ColorButtonLightWarning);
-}
-
-.Color_Button_LightError
-{
-    background-color: var(--ColorButtonLightError);
-}
-
-.Color_Button_LightDisabled
-{
-    background-color: var(--ColorButtonLightDisabled);
-}
-
-.Color_Button_Gradient
-{
-    background-color: var(--ColorButtonGradient);
-}
-
-.Color_Button_Gradient:hover
-{
-    background-color: var(--ColorButtonGradientHover);
-}
-
-/* Icon Colors */
-
-.Color_Icon_DarkPrimary
-{
-    color: var(--ColorIconDarkPrimary);
-}
-
-.Color_Icon_DarkSecondary
-{
-    color: var(--ColorIconDarkSecondary);
-}
-
-.Color_Icon_DarkAccent
-{
-    color: var(--ColorIconDarkAccent);
-}
-
-.Color_Icon_DarkDisabled
-{
-    color: var(--ColorIconDarkDisabled);
-}
-
-.Color_Icon_LightPrimary
-{
-    color: var(--ColorIconLightPrimary);
-}
-
-.Color_Icon_LightSecondary
-{
-    color: var(--ColorIconLightSecondary);
-}
-
-.Color_Icon_LightAccent
-{
-    color: var(--ColorIconLightAccent);
-}
-
-.Color_Icon_LightDisabled
-{
-    color: var(--ColorIconLightDisabled);
-}
-
-.Color_Icon_GradientPrimary
-{
-    background: var(--ColorIconGradientPrimary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.Color_Icon_GradientSecondary
-{
-    background: var(--ColorIconGradientSecondary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 /*************************************** | Fonts | ****************************************/
 
 :root 
@@ -375,74 +107,205 @@
     --FontWeightIconSmall: 500;
 }
 
-.Text_Title_Huge
+/*************************************** | Animations | ****************************************/
+
+/* Element size increase on Hover */
+
+@media(min-width: 800px)
 {
-    font-size: var(--FontSizeTitleHuge);
-    font-weight: var(--FontWeightTitleHuge);
+    .AnimationIncrease0, .AnimationIncrease1, .AnimationIncrease2, .AnimationIncrease3, .AnimationIncrease4
+    {
+        transition: transform 0.15s;
+    }
+
+    .AnimationIncrease0:hover, .AnimationIncrease1:hover, .AnimationIncrease2:hover, .AnimationIncrease3:hover, .AnimationIncrease4:hover
+    {
+        opacity: 82%;
+    }
+
+    .AnimationIncrease0:hover
+    {
+        transform: scale(1.05);
+    }
+
+    .AnimationIncrease1:hover
+    {
+        transform: scale(1.1);
+    }
+
+    .AnimationIncrease2:hover
+    {
+        transform: scale(1.15);
+    }
+
+
+    .AnimationIncrease3:hover
+    {
+        transform: scale(1.25);
+    }
+
+    .AnimationIncrease4:hover
+    {
+        transform: scale(1.35);
+    }
 }
 
-.Text_TitleBig
+/* Element fades in */
+
+.AnimationFadeIn0, .AnimationFadeIn1, .AnimationFadeIn2, .AnimationFadeIn3
 {
-    font-size: var(--FontSizeTitleBig);
-    font-weight: var(--FontWeightTitleBig);
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 }
 
-
-
-/*************************************** | Borders | ****************************************/
-
-:root 
+.AnimationFadeIn0
 {
-    --BorderRadiusRound: 50%;
-    --BorderRadiusRounded: 15px;
-    --BorderRadiusPolished: 8px;
-    --BorderRadiusNone: 0px;
+    animation: AnimationFadeIn ease 1.5s;
+}
+
+.AnimationFadeIn1
+{
+    animation: AnimationFadeIn ease 2.5s;
+}
+
+.AnimationFadeIn2
+{
+    animation: AnimationFadeIn ease 3.5s;
+}
+
+.AnimationFadeIn3
+{
+    animation: AnimationFadeIn ease 4.5s;
+}
+
+@keyframes AnimationFadeIn 
+{ 
+    0% 
+    { 
+        opacity: 0; 
+    } 
     
-    --BorderSizeThick: 5px;
-    --BorderSizeMedium: 2px;
-    --BorderSizeThin: 1px;
-    --BorderSizeNone: 0px;
-}
+    100% 
+    { 
+        opacity: 1; 
+    } 
+} 
 
-.BorderRadius_Round
+/* Underline from left to right on Hover */
+
+@media(min-width: 800px)
 {
-    border-radius: var(--BorderRadiusRound);
+  .AnimationUnderline
+  {
+    background-image: var(--ColorTextDarkPrimary);
+    background-position: 0% 77.5%;
+    background-position-y: 35px;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.5s;
+  }
+  
+  .AnimationUnderline:hover 
+  {
+    background-size: 100% 2px;
+    color: var(--TextPrimary);
+  }
 }
 
-.BorderRadius_Rounded
+
+
+
+
+
+
+/* Provizoriu aici */
+
+i 
 {
-    border-radius: var(--BorderRadiusRounded);
+    font-family: "FontAwesome";
 }
 
-.BorderRadius_Polished
+body
 {
-    border-radius: var(--BorderRadiusPolished);
+	height: 100vh;
+
+
+	background-color: var(--ColorBackgroundDarkPrimary);
 }
 
-.BorderRadius_None
+.Debug
 {
-    border-radius: var(--BorderRadiusNone);
+	border: 2px solid red;
 }
 
-.BorderSize_Thick
+/*************************************** | Navbar | ****************************************/
+
+/* Navbar Toggler */
+
+navbar
 {
-    border-width: var(--BorderSizeThick);
+    position: fixed;
+    z-index: 99;
+    background-color: var(--ColorBackgroundGlassPrimary);
+    backdrop-filter: blur(6px);
+    border-radius: 30px;
+    width: 80vw;
+    height: 65px;
+    left: 10vw;
+    bottom: -100px;
 }
 
-.BorderSize_Medium
+.NavbarIcon
 {
-    border-width: var(--BorderSizeMedium);
+	margin-top: 15px;
+	font-size: 25px;
+	color: var(--ColorTextLightPrimary);
 }
 
-.BorderSize_Thin
+@media(min-width: 500px)
 {
-    border-width: var(--BorderSizeThin);
+    navbar
+    {
+        width: 400px;
+        height: 75px;
+        left: calc(50vw - 200px);
+    }
+
+	.NavbarIcon
+	{
+		margin-top: 18px;
+		font-size: 29px;
+	}
 }
 
-.BorderSize_None
+#NavbarActiveRow
 {
-    border-width: var(--BorderSizeNone);
+	margin-top: 8px;
+	margin-left: 5%;	
+	width: 90%;
 }
 
-/*************************************** |  | ****************************************/
+#ActiveMenu
+{
+	background-color: var(--ColorBackgroundDarkPrimary);
+	height: 5px;
+	border-radius: 5px;
+}
+
+/*************************************** | Pages and Containers | ****************************************/
+
+    #PagesContainer
+	{
+		width: 100%;
+		height: 100%;
+	}
+
+    .PageContainer
+	{
+        background: var(--ColorBackgroundDarkPrimary);
+        color: var(--ColorTextDarkPrimary);
+    }
+
+
+
 
