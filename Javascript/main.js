@@ -2,21 +2,22 @@
 
 var PageSwiper;
 var Navbar;
+var ActiveMenuSlider;
+var ActiveMenuSliderBaseDelay;
 var SiteLocation = window.location.href.split("#")[0];
 
 var RightKeyPressed = false;
 var LeftKeyPressed = false;
-
-ActiveNavbarElement = document.getElementById("ActiveMenuSlider");
 
 
 /*************************************** | Initialize the Site | ****************************************/
 
 window.addEventListener("load", function() 
 {
-	/* Intializes the Page Swiper */
+	/* Initializes the Page Swiper */
 
 	PageSwiper = new Swiper("#PagesContainer", {});
+	ActiveMenuSlider = document.getElementById("ActiveMenu");
 
 	PageSwiper.on("slideChange", function () 
 	{
@@ -26,6 +27,7 @@ window.addEventListener("load", function()
 	if(window.location.href != SiteLocation)
 	{
 		PageSwiper.slideTo(window.location.href.split("#")[1], 0, true)
+		setTimeout(ResetMenuDelay, 1);
 	}
 
 	/* Initializes the navbar */
@@ -41,6 +43,8 @@ window.addEventListener("load", function()
 	{
 		Navbar.style.bottom = "6vh";
 	}
+
+	ActiveMenuSlider.style.marginLeft = String(5 + 25 * PageSwiper.activeIndex) + "%";
 
 	/* Initializes the Shortcuts */
 
@@ -84,8 +88,8 @@ window.addEventListener("load", function()
 function HandlePageChange()
 {
 	window.location.href = SiteLocation + "#" + PageSwiper.activeIndex;
+	ActiveMenuSlider.style.marginLeft = String(5 + 25 * PageSwiper.activeIndex) + "%";
 }
-
 
 
 
@@ -99,8 +103,17 @@ function SlideToPage(PageIndex)
 {
 	var SlideDelta = Math.abs(PageSwiper.activeIndex - PageIndex);
 
-	PageSwiper.slideTo(PageIndex, 300 * SlideDelta, true)
+	ActiveMenuSlider.style.transitionDuration = String((300 * SlideDelta) / 1000) + "s";
+	PageSwiper.slideTo(PageIndex, 300 * SlideDelta, true);
+	setTimeout(ResetMenuDelay, 300 * SlideDelta);
+
 }
 
 
+/*************************************** | Helper Functions | ****************************************/
+
+function ResetMenuDelay()
+{
+	ActiveMenuSlider.style.transitionDuration = "0.3s";
+}
 

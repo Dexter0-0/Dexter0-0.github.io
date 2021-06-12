@@ -12,8 +12,8 @@
     --ColorBackgroundGradientSecondary: linear-gradient(to bottom right, rgb(220, 132, 255), rgb(87, 140, 255));
 	--ColorBackgroundGlassPrimary: rgba(255, 255, 255, 0.25);
 	--ColorBackgroundGlassSecondary: rgba(255, 255, 255, 0.40);
-    --ColorBackgroundTransparentPrimary: 30%;
-    --ColorBackgroundTransparentSecondary: 0%;
+    --ColorBackgroundTransparentPrimary: 0%;
+    --ColorBackgroundTransparentSecondary: 30%;
 
     /* Text Colors */
 
@@ -228,9 +228,8 @@ i
 body
 {
 	height: 100vh;
-
-
-	background-color: var(--ColorBackgroundDarkPrimary);
+	background: var(--ColorBackgroundGradientPrimary);
+	background-repeat: no-repeat;
 }
 
 .Debug
@@ -257,7 +256,7 @@ navbar
 
 .NavbarIcon
 {
-	margin-top: 18px;
+	margin-top: 15px;
 	font-size: 25px;
 	color: var(--ColorTextLightPrimary);
 }
@@ -273,24 +272,39 @@ navbar
 
 	.NavbarIcon
 	{
-		margin-top: 20px;
+		margin-top: 18px;
 		font-size: 29px;
 	}
 }
 
+#NavbarActiveRow
+{
+	margin-top: 5px;
+}
+
+#ActiveMenu
+{
+	background-color: var(--ColorBackgroundDarkPrimary);
+	height: 5px;
+	border-radius: 5px;
+	width: 15%;
+	transition: all 0s ease;
+}
+
 /*************************************** | Pages and Containers | ****************************************/
 
-    #PagesContainer
-	{
-		width: 100%;
-		height: 100%;
-	}
+#PagesContainer
+{
+	width: 100%;
+	height: 100%;
+}
 
-    .PageContainer
-	{
-        background: var(--ColorBackgroundDarkPrimary);
-        color: var(--ColorTextDarkPrimary);
-    }
+page
+{
+	color: var(--ColorTextDarkPrimary);
+	background-repeat: no-repeat;
+    background-size: 100% auto;
+}
 
 
 
